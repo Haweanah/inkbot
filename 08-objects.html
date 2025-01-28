@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!--rock beats scissors, paper beats rock and scissors beat paper-->
+    <script>
+      // object has property and value
+       /* const product = {
+        name: 'socks',
+        price : 1090
+      };
+      console.log(product);
+      console.log(product.price);
+      console.log(product.name);
+
+      product.name = 'white socks';
+      console.log(product.name)
+
+      product.size = 'big';
+      console.log(product);
+      delete product.size;
+      console.log(product)
+      */
+     // you can access content of an object using dot/bracket notation
+     /*product2 = {
+      name : 'apple',
+      ['delivery-time'] : 10,
+      ratings : {
+        stars : 4.5,
+        count : 87,
+        'response-time' : '5 mins'
+      },
+      fun : function function1(a, b) {
+        console.log(a+b);
+        console.log('function inside object');
+      }
+     };
+
+     console.log(product2['name']);
+     console.log(product2['delivery-time']);
+     console.log(product2.ratings['response-time']);
+     console.log(product2.ratings['count']);
+     console.log(product2.ratings.stars);
+     product2.fun(2, 3);*/
+
+     // JSON does not support single quotes and functions
+     // all objects in JSON must use double quotes
+     // JSON is used when we send data between 2 computers hat might use different programming langs
+     /*console.log(JSON.stringify(product2));
+     const jsonString = JSON.stringify(product2);
+     console.log(JSON.parse(jsonString));
+     local storage is a builtin object used to save value permanently.
+     */
+     
+let myName = 'nana';
+console.log(myName.toUpperCase());
+console.log(myName.length);
+console.log(myName.toLowerCase());
+
+
+object3 = {
+  message : 'good job'
+};
+
+object4 = object3;
+
+object5 = {
+  message : 'good job',
+  price : 10,
+  quantity : 2,
+}
+
+console.log(object3 === object4);
+console.log(object3 === object5);
+/*const message = object5.message;
+const price = object5.price*/
+const {message, price, quantity} = object5;
+console.log(quantity);
+
+const object6 = {
+  //message: message
+  message,
+ /* method: function function1() {
+    console.log('method');
+  }*/
+ method() {
+  console.log('method');
+ }
+}
+console.log(object6);
+object6.method();
+
+
+      </script>
+  </body>
+</html>

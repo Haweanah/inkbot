@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+     
+  </head>
+  <body>
+   <!--array is another type of value that represents a list of other values--> 
+    <script>
+      /*
+      arrays can accept objects and booleans
+      its a special type of object
+      */
+
+      const myArray = [10, 20, 30];
+      // to check if a value is an array:
+      console.log(Array.isArray([1, 6, "jo", true]));
+      const anotherArray = [1, 3, 5, [1, true, false], {name: 'jayjay', age: 23, sex: 'male'}];
+      console.log(anotherArray);
+      console.log(anotherArray[3]);
+      console.log(anotherArray[4]);
+      console.log(anotherArray[3][2]);
+      console.log(anotherArray[4]["name"]);
+      console.log(anotherArray[4].name);
+      console.log(anotherArray[4].sex);
+      console.log(anotherArray.length);
+      anotherArray.push('add something');
+      console.log(anotherArray);
+      anotherArray.splice(0, 2);
+      console.log(anotherArray);
+    </script>
+  </body>
+</html>
