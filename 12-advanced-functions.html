@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Loops</title>
+     
+  </head>
+  <body>
+   <!--array is another type of value that represents a list of other values--> 
+    <script>
+   /* function greeting() {
+        console.log('hello');
+    }
+
+    greeting();
+// if there is a way to access a function, then the function name is not needed. this is called 'anonymous fxn'
+
+   // const function1 =  function greeting() {
+    const function1 =  function () {
+        console.log('hello2');
+    };
+
+    function1();
+    console.log(function1);
+    */
+
+    //a function saved inside an object is called a method
+
+    /*const object1 = {
+        num: 2,
+        fun: function greeting() {
+            console.log('hello3');
+        }
+    };
+
+    object1.fun();
+
+    // callback functionis when a function is passed into a function
+
+    function run(param) {
+        param();
+    }
+
+    run(function() {
+        console.log('hello4');
+    });
+    */
+
+    //setTimeout allows a fxn to be run in the future 
+    //1000 millisecond==1second
+   /*  setTimeout(function() {
+        console.log('timeout')
+     }, 3000);
+    console.log('next line');
+
+    //setInterval is a built in fxn that keeps running at interval in the future
+
+    setInterval(function() {
+        console.log('interval')
+    }, 3000);
+
+    console.log('next line 2');
+    */
+    
+
+    [
+        'make dinner',
+        'wash dishes',
+        'watch youtube'
+    ].forEach(function(value, index) {
+        console.log(value);
+        console.log(index);
+    });
+    </script>
+  </body>
+</html>
